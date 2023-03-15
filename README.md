@@ -73,12 +73,18 @@ Black Box Testing - Another Team’s Project
    Template which includes a long check list of tasks and their status (To be provided).
 2. Summarize your findings in a 3-page report.
 
-## How to run?
+## How to run LOCALLY?
+*Make sure you've cloned/pulled to your device
+Updated React
+1. cd to client -> odfds dir, type: npm run build
+2. c&p that build folder into server
+Run
+4. cd to server dir, type: npm start
+5. Check http://localhost:3000
 
-1. Make sure you've cloned repo to device
-2. cd to project folder
-3. in terminal type: npm run dev
-4. in another ternimal cd to project folder and then cd into demo folder
-5. in that terminal, type: npm start
+Deploying
+5. update files in github repo odfds-heroku
+6. go to heroku -> deploy -> Manual deploy: deploy branch
+7. hit view or open app (this is part of the top banner)
 
 Note: you'll be taken to the localhost page of the react app apart of the demo.
