@@ -7,14 +7,31 @@ var logger = require("morgan");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 
+var mysql = require("mysql");
+
 var app = express();
 
+//--------------------------------------------
+//Connecting React
 app.use(express.static(path.join(__dirname, "build")));
 
 app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
+//--------------------------------------------
+//MySQL setup
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "yourusername",
+  password: "yourpassword",
+});
 
+con.connect(function (err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
+
+//--------------------------------------------
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
