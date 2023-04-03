@@ -68,7 +68,7 @@ Implementation, Packaging, and Process Documents
 - A how-to video for install/configure/customization/usage (should be 10-15 minutes in length)
 
 **Part IV: Due Date: 5/8/23**
-Black Box Testing - Another Team’s Project
+Black Box Testing - Another Team’s Project.
 
 1. Perform Black Box testing for another team’s project. Then fill in the Black Box Testing Document
    Template which includes a long check list of tasks and their status (To be provided).
