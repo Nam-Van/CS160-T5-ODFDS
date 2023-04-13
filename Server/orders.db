@@ -1,0 +1,14 @@
+CREATE TABLE `orders` (
+  `idorder` int NOT NULL,
+  `idrestaurant` int NOT NULL,
+  `iddriver` int NOT NULL,
+  `picked_up` tinyint NOT NULL,
+  `completed` tinyint NOT NULL,
+  `delivery_address` varchar(100) NOT NULL,
+  `customer_phone_number` varchar(50) NOT NULL,
+  PRIMARY KEY (`idorder`),
+  KEY `rid_idx` (`idrestaurant`),
+  KEY `iddriver_idx` (`iddriver`),
+  CONSTRAINT `iddriver` FOREIGN KEY (`iddriver`) REFERENCES `drivers` (`iddriver`),
+  CONSTRAINT `idrestaurant` FOREIGN KEY (`idrestaurant`) REFERENCES `restaurants` (`idrestaurant`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

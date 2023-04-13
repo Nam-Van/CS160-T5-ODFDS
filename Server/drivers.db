@@ -1,0 +1,15 @@
+CREATE TABLE `drivers` (
+  `iddriver` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(45) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `drivers_license_number` varchar(255) DEFAULT NULL,
+  `license_plate_number` varchar(45) DEFAULT NULL,
+  `isActive` tinyint DEFAULT NULL,
+  `isAvailable` tinyint DEFAULT NULL,
+  `number_orders` int DEFAULT NULL,
+  `F_name` varchar(45) DEFAULT NULL,
+  `L_name` varchar(45) DEFAULT NULL,
+  `location` point DEFAULT NULL,
+  PRIMARY KEY (`iddriver`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

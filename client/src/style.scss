@@ -1,0 +1,195 @@
+$color: #E7C27D;
+
+.app{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 100%;
+        .link{
+            text-decoration: none;
+            color: inherit;
+        }
+        //Login and Register
+        .auth{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            background-color: #a2c164;
+            .logo{
+                margin-bottom: 50px;
+
+            }
+            .login{
+                display:flex;
+                align-items: center;
+                justify-content: space-evenly;
+                .restaurant{
+                    padding: 20px;
+                    h1{
+                        font-size: 20px;
+                        color: black;
+                        margin-bottom: 20px;
+                    }
+        
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 40px;
+                        background-color: white;
+                        width: 200px;
+                        gap:20px;
+        
+                        input{
+                            padding: 10px;
+                            border: none;
+                            border-bottom: 1px solid grey;
+                        }
+        
+                        button{
+                            padding: 10px;
+                            border: none;
+                            background-color: #E7C27D;
+                            cursor: pointer;
+                            color: black;
+        
+                        }
+        
+                        p{
+                            font-size: 12px;
+                            color: red;
+                            text-align: center;
+                        }
+        
+                        span{
+                            font-size: 12px;
+                            text-align: center;
+                        }
+            
+                    }
+                }
+                .driver{
+                    padding: 20px;
+                    h1{
+                        font-size: 20px;
+                        color: black;
+                        margin-bottom: 20px;
+                    }
+        
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 40px;
+                        background-color: white;
+                        width: 200px;
+                        gap:20px;
+        
+                        input{
+                            padding: 10px;
+                            border: none;
+                            border-bottom: 1px solid grey;
+                        }
+        
+                        button{
+                            padding: 10px;
+                            border: none;
+                            background-color: #E7C27D;
+                            cursor: pointer;
+                            color: black;
+        
+                        }
+        
+                        p{
+                            font-size: 12px;
+                            color: red;
+                            text-align: center;
+                        }
+        
+                        span{
+                            font-size: 12px;
+                            text-align: center;
+                        }
+            
+                    }
+                }
+
+            }
+
+        }
+
+        //Navbar
+        .navbar{
+            .container{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .logo{
+                    img{
+                        width: 200px;
+                    }
+                }
+                .links{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-right: 50px;
+
+
+                    h6{
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+
+                    span{
+                        cursor: pointer;
+                    }
+
+                    .delivery{
+                        background-color: #a2c164;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        // font-weight: 300;
+                    }
+
+                }
+            }
+        }
+
+        //Footer
+
+        footer{
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #a2c164;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            img{
+                height: 50px;
+
+            }
+        }
+
+
+        //Homepage
+
+        .logo{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+
+
+    }
+}
